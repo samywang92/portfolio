@@ -25,7 +25,7 @@
                     <img src="./images/nav-bg.jpg">
                 </div>
                 <div class="row">
-                    <div class="col m12"><img class="circle" src="https://previews.123rf.com/images/solargaria/solargaria1709/solargaria170900007/85362512-user-icon-male-avatar-in-business-suit-businessman-flat-icon-man-in-business-suit-avatar-of-business.jpg"></div>
+                    <div id="profile-pic" class="col m12"><img class="circle" src="https://previews.123rf.com/images/solargaria/solargaria1709/solargaria170900007/85362512-user-icon-male-avatar-in-business-suit-businessman-flat-icon-man-in-business-suit-avatar-of-business.jpg"></div>
                 </div>
                 <div class="row text-shadow">
                     <span class="white-text name">SAM WANG <br> Fountain Valley, CA</span>
@@ -43,6 +43,7 @@
     </ul>
     <div class="side-nav">
         <a data-target="slide-out" class="sidenav-trigger waves-effect waves-red btn-flat"><i class="material-icons white-text">menu</i></a>
+        
     </div>
 
 
@@ -232,8 +233,11 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
+        var elem = document.querySelector('.sidenav');
+        var instance = M.Sidenav.getInstance(elem);
         M.AutoInit();
         $(document).ready(function () {
+            instance.open();
             $('.carousel').carousel();
             $('.scrollspy').scrollSpy();
             $('.sidenav').sidenav();

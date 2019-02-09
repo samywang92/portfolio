@@ -12,7 +12,7 @@ body{
 
 #name_text{
     position: relative;
-    top: 25%;
+    top: 27%;
     margin: auto;
     font-family: 'Montserrat', sans-serif;
     color: white;
@@ -44,6 +44,7 @@ body{
 #subtitle{
     font-size: 28px;
     font-weight: 400;
+    margin-top:-1.5em;
 }
 
 .fill-screen{
@@ -58,11 +59,12 @@ body{
     bottom: 0;
 }
 
-/* .side-nav{
+.side-nav{
     position: fixed;
     top: 0;
     left: 0;
-}  */
+    z-index: 9999;
+} 
 
 
 .carousel .carousel-item {
@@ -111,5 +113,14 @@ body{
 
 .sidenav li > a:hover {
 background-color: rgba(255, 255, 255, 0.199);
+}
+
+#profile-pic img{
+    background-color:red;
+    margin: auto;
+}
+
+.hide{
+    display: none;
 }
 
