@@ -17,7 +17,6 @@ body{
     font-family: 'Montserrat', sans-serif;
     color: white;
     font-weight: 700;
-    text-shadow: 2px 2px 4px #000000;
 }
 
 #name-header{
@@ -25,20 +24,22 @@ body{
     text-shadow: 2px 2px 4px #000000;
 }
 
-#education_section{
-    font-family: 'Montserrat', sans-serif;
+.text-shadow{
     text-shadow: 2px 2px 4px #000000;
 }
 
+#education_section{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
 .section-header{
     letter-spacing: 5px;
-    text-shadow: 2px 2px 4px #000000;
 }
 
 #subtitle{
     font-size: 28px;
     font-weight: 400;
-    text-shadow: 2px 2px 4px #000000;
 }
 
 .fill-screen{
