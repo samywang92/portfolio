@@ -13,21 +13,33 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
 </head>
 
 <body>
     <ul id="slide-out" class="sidenav black">
         <li>
-            <div class="user-view white-text">
+            <div class="user-view white-text valign center">
                 <div class="background">
                     <img src="https://materializecss.com/images/office.jpg">
                 </div>
-                <a href="#user"><img class="circle" src="https://materializecss.com/images/yuna.jpg"></a>
-                <a href="#name"><span class="white-text name">SAM WANG</span></a>
+                <div class="row">
+                    <div class="col m12"><img class="circle" src="https://materializecss.com/images/yuna.jpg"></div>
+                </div>
+                <div class="row text-shadow">
+                    <span class="white-text name">SAM WANG <br> Fountain Valley, CA</span>
+                </div>
+
+
             </div>
         </li>
-        <li><a href="#!" class="white-text"><i class="material-icons white-text">mail</i>Contact Me</a></li>
-        <li><a href="#!" class="white-text"><i class="material-icons white-text">attach_file</i>View Resume</a></li>
+        <li><a href="#contactForm" class="white-text modal-trigger waves-effect waves-light"><i class="material-icons white-text">mail</i>Contact Me</a></li>
+        <li><a href="#!" class="white-text"><i class="material-icons white-text waves-effect waves-light">attach_file</i>Resume</a></li>
+        <li><a href="https://www.linkedin.com/in/sam-wang-58445513b/" class="white-text waves-effect waves-light" target="_blank"><span style="font-size: 2em; color: white;"><i
+                        class="fab fa-linkedin"></i></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LinkedIn</a></li>
+        <li><a href="https://github.com/samywang92" class="white-text waves-effect waves-light"><span style="font-size: 2em; color: white;"><i
+                        class="fab fa-github-square"></i></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Github</a></li>
     </ul>
     <div class="side-nav">
         <a data-target="slide-out" class="sidenav-trigger waves-effect waves-red btn-flat"><i class="material-icons white-text">menu</i></a>
@@ -59,7 +71,7 @@
                     <div class="row">
                         <div class="col m6 s12">
                             <h5>University of California Irvine</h5>
-                            <p><i>Fullstack Engineering Bootcamp Certificate</i></p>
+                            <p><i>Fullstack Developer Certificate</i></p>
                         </div>
                         <div class="col m6 s12">
                             <h5>California State University Long Beach</h5>
@@ -135,15 +147,30 @@
                         <h3 class="section-header">.portfolio</h3>
                     </div>
                     <div class="row">
-                        <div class="carousel valign center">
-                            <a class="carousel-item white-text" href="#one!"><img src="https://sprites.pokecheck.org/i/001.gif">Kangaride
-                                Application</a>
-                            <a class="carousel-item" href="#two!"><img src="https://sprites.pokecheck.org/i/002.gif"></a>
-                            <a class="carousel-item" href="#three!"><img src="https://sprites.pokecheck.org/i/003.gif"></a>
-                            <a class="carousel-item" href="#four!"><img src="https://sprites.pokecheck.org/i/004.gif"></a>
-                            <a class="carousel-item" href="#five!"><img src="https://sprites.pokecheck.org/i/005.gif"></a>
+                        <div class="carousel valign center portfolio-spacing">
+                            <a class="carousel-item white-text" href="https://heardman.github.io/Project1/#" target="_blank"><img
+                                    src="https://sprites.pokecheck.org/i/001.gif">Kangaride Application</a>
+                            <a class="carousel-item white-text" href="https://samywang92.github.io/Pokemon-RPG/" target="_blank"><img
+                                    src="https://sprites.pokecheck.org/i/002.gif">Pokmeon Battle</a>
+                            <a class="carousel-item white-text" href="https://samywang92.github.io/Bootstrap-Portfolio/"
+                                target="_blank"><img src="https://sprites.pokecheck.org/i/003.gif">Boostrap Portfolio</a>
+                            <a class="carousel-item white-text" href="https://samywang92.github.io/Responsive-Portfolio/"
+                                target="_blank"><img src="https://sprites.pokecheck.org/i/004.gif">Responsive Portfolio</a>
+                            <a class="carousel-item white-text" href="https://github.com/samywang92/Project3" target="_blank"><img
+                                    src="https://sprites.pokecheck.org/i/005.gif">C# Chess w/ AI</a>
+                            <a class="carousel-item white-text" href="https://youtu.be/POXEHaOsOvI?t=1m45s" target="_blank"><img
+                                    src="https://sprites.pokecheck.org/i/006.gif">Voice Control Chess</a>
+                            <a class="carousel-item white-text" href="https://samywang92.github.io/TriviaGame/" target="_blank"><img
+                                    src="https://sprites.pokecheck.org/i/007.gif">Trivia Game</a>
+                            <a class="carousel-item white-text" href="https://github.com/samywang92/liri-bot" target="_blank"><img
+                                    src="https://sprites.pokecheck.org/i/008.gif">Liri Bot</a>
+                            <a class="carousel-item white-text" href="https://github.com/samywang92/bamazon" target="_blank"><img
+                                    src="https://sprites.pokecheck.org/i/009.gif">Bamazon</a>
                         </div>
                     </div>
+                </div>
+                <div id="footer">
+
                 </div>
             </div>
             <div class="col hide-on-small-only m3 l2">
@@ -161,17 +188,42 @@
     <div class="bottom-nav">
         <div class="row">
             <div class="chip">
+                <a href="#resume" class="black-text modal-trigger waves-effect waves-light">
                 <i class="material-icons">attach_file</i>
                 Resume
+                </a>
             </div>
 
             <div class="chip">
+                <a href="#contactForm" class="black-text modal-trigger waves-effect waves-light">
                 <!-- <img src="https://materializecss.com/images/yuna.jpg" alt="Contact Person"> -->
                 <i class="material-icons">mail</i>
                 Contact
+                </a>
             </div>
         </div>
     </div>
+
+    <div id="contactForm" class="modal">
+        <div class="modal-content valign center black white-text">
+            <h4>Contact Me</h4>
+            <p><i class="material-icons prefix">phone</i> (714) 369-7988</p>
+            <p><i class="material-icons prefix">mail</i> samuelwangkc@gmail.com</p>
+        </div>
+        <div class="modal-footer black white-text">
+            <a href="#!" class="modal-close waves-effect waves-light btn-flat white-text">Close</a>
+        </div>
+    </div>
+
+    <div id="resume" class="modal">
+            <div class="modal-content valign center black white-text">
+                <h4>Resume</h4>
+                <embed src="./TechResume2019.pdf" frameborder="0" width="100%" height="400rm">
+            </div>
+            <div class="modal-footer black white-text">
+                <a href="#!" class="modal-close waves-effect waves-light btn-flat white-text">Close</a>
+            </div>
+        </div>
 
 
 
@@ -182,6 +234,7 @@
         $(document).ready(function () {
             $('.carousel').carousel();
             $('.scrollspy').scrollSpy();
+            $('.sidenav').sidenav();
         });
     </script>
 </body>

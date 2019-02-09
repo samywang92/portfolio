@@ -37,6 +37,10 @@ body{
     letter-spacing: 5px;
 }
 
+.portfolio-spacing{
+    letter-spacing: 2px;
+}
+
 #subtitle{
     font-size: 28px;
     font-weight: 400;
