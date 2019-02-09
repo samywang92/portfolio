@@ -10,47 +10,148 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <ul id="slide-out" class="sidenav black">
+        <li>
+            <div class="user-view white-text">
+                <div class="background">
+                    <img src="https://materializecss.com/images/office.jpg">
+                </div>
+                <a href="#user"><img class="circle" src="https://materializecss.com/images/yuna.jpg"></a>
+                <a href="#name"><span class="white-text name">SAM WANG</span></a>
+            </div>
+        </li>
+        <li><a href="#!" class="white-text"><i class="material-icons white-text">mail</i>Contact Me</a></li>
+        <li><a href="#!" class="white-text"><i class="material-icons white-text">attach_file</i>View Resume</a></li>
+    </ul>
+    <div class="side-nav">
+        <a data-target="slide-out" class="sidenav-trigger waves-effect waves-red btn-flat"><i class="material-icons white-text">menu</i></a>
+    </div>
+
+
     <div class="main-container">
         <div class="row">
             <div class="col s12 m9 l10">
-                <div id="name_section" class="section scrollspy parallax-container">
+                <div id="name_section" class="section scrollspy parallax-container fill-screen">
                     <div class="parallax"><img src="./images/bg.jpg"></div>
                     <div id="name_text" class="valign center">
-                        SAM WANG
+                        <div class="row" style="bottom: 0">
+                            <h1 id="name-header">SAM WANG</h1>
+                        </div>
+                        <div id="subtitle" class="row">
+                            Fullstack Developer
+                        </div>
+                        <div class="row">
+                            <img src="./images/pika.gif" alt="pika" style="width: 125px; height: 100px"></img>
+                        </div>
                     </div>
                 </div>
 
-                <div id="education_section" class="section black scrollspy white-text">
-                    Hello Education
+                <div id="education_section" class="section black scrollspy white-text valign center">
+                    <div class="row">
+                        <h3 class="section-header">.education</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col m6 s12">
+                            <h5>University of California Irvine</h5>
+                            <p><i>Fullstack Engineering Bootcamp Certificate</i></p>
+                        </div>
+                        <div class="col m6 s12">
+                            <h5>California State University Long Beach</h5>
+                            <p><i>B.S Computer Engineering</i></p>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div id="skills_section" class="section parallax-container scrollspy">
+                <div id="skills_section" class="section parallax-container scrollspy valign center white-text">
                     <div class="parallax"><img src="./images/bg.jpg"></div>
-                    Hello Skills
+                    <div class="row">
+                        <h3 class="section-header">.skillset</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col m6 s12">
+                            <h5>Programming Languages</h5>
+                            <div class="col m6 s12">
+                                <ul style="list-style-type:square;">
+                                    <li>JavaScript</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>SQL</li>
+                                </ul>
+                            </div>
+                            <div class="col m6 s12">
+                                <ul style="list-style-type:square;">
+                                    <li>C#</li>
+                                    <li>Java</li>
+                                    <li>C++</li>
+                                    <li>Assembly</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col m6 s12">
+                            <h5>Technical Skills</h5>
+                            <div class="col m4 s12">
+                                <ul style="list-style-type:square;">
+                                    <li>Bootstrap</li>
+                                    <li>Materialize</li>
+                                    <li>JQuery</li>
+                                    <li>AJAX</li>
+                                    <li>Node.JS</li>
+                                    <li>Express Framework</li>
+                                </ul>
+                            </div>
+                            <div class="col m4 s12">
+                                <ul style="list-style-type:square;">
+                                    <li>.NET Framework</li>
+                                    <li>MongoDB</li>
+                                    <li>MySQL</li>
+                                    <li>Firebase</li>
+                                    <li>Git</li>
+                                    <li>Agile</li>
+                                </ul>
+                            </div>
+                            <div class="col m4 s12">
+                                <ul style="list-style-type:square;">
+                                    <li>Visual Studio</li>
+                                    <li>Eclipse</li>
+                                    <li>Arduino</li>
+                                    <li>Photoshop</li>
+                                    <li>MacOS</li>
+                                    <li>Linux/Ubuntu</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div id="portfolio_section" class="section black scrollspy white-text">
-                    Hello Portfolio
-                    <div class="carousel valign center">
-                        <a class="carousel-item white-text" href="#one!"><img src="https://sprites.pokecheck.org/i/001.gif">01.
-                            Kangaride
-                            Application</a>
-                        <a class="carousel-item" href="#two!"><img src="https://sprites.pokecheck.org/i/002.gif"></a>
-                        <a class="carousel-item" href="#three!"><img src="https://sprites.pokecheck.org/i/003.gif"></a>
-                        <a class="carousel-item" href="#four!"><img src="https://sprites.pokecheck.org/i/004.gif"></a>
-                        <a class="carousel-item" href="#five!"><img src="https://sprites.pokecheck.org/i/005.gif"></a>
+                <div id="portfolio_section" class="section black scrollspy white-text valign center">
+                    <div class="row">
+                        <h3 class="section-header">.portfolio</h3>
+                    </div>
+                    <div class="row">
+                        <div class="carousel valign center">
+                            <a class="carousel-item white-text" href="#one!"><img src="https://sprites.pokecheck.org/i/001.gif">Kangaride
+                                Application</a>
+                            <a class="carousel-item" href="#two!"><img src="https://sprites.pokecheck.org/i/002.gif"></a>
+                            <a class="carousel-item" href="#three!"><img src="https://sprites.pokecheck.org/i/003.gif"></a>
+                            <a class="carousel-item" href="#four!"><img src="https://sprites.pokecheck.org/i/004.gif"></a>
+                            <a class="carousel-item" href="#five!"><img src="https://sprites.pokecheck.org/i/005.gif"></a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col hide-on-small-only m3 l2">
                 <ul class="section table-of-contents right-align" style="padding-top:250px; position:fixed;">
-                    <li class="left-align"><a href="#name_section">Welcome</a></li>
-                    <li class="left-align"><a href="#education_section">Education</a></li>
-                    <li class="left-align"><a href="#skills_section">Skills</a></li>
-                    <li class="left-align"><a href="#portfolio_section">Portfolio</a></li>
+                    <li class="left-align"><a href="#name_section">.welcome</a></li>
+                    <li class="left-align"><a href="#education_section">.education</a></li>
+                    <li class="left-align"><a href="#skills_section">.skillset</a></li>
+                    <li class="left-align"><a href="#portfolio_section">.portfolio</a></li>
                 </ul>
             </div>
 
@@ -58,18 +159,19 @@
     </div>
 
     <div class="bottom-nav">
-            <div class="row">
-                <div class="chip">
-                    <img src="https://materializecss.com/images/yuna.jpg" alt="Contact Person">
-                    Resume
-                </div>
-    
-                <div class="chip">
-                    <img src="https://materializecss.com/images/yuna.jpg" alt="Contact Person">
-                    Contact
-                </div>
+        <div class="row">
+            <div class="chip">
+                <i class="material-icons">attach_file</i>
+                Resume
+            </div>
+
+            <div class="chip">
+                <!-- <img src="https://materializecss.com/images/yuna.jpg" alt="Contact Person"> -->
+                <i class="material-icons">mail</i>
+                Contact
             </div>
         </div>
+    </div>
 
 
 

@@ -7,12 +7,38 @@ body{
     /* background-image: url("file:///Users/sam/Desktop/CodingBootcamp/portfolio/portfolio/images/bg.jpg"); */
     height: 100%;
     background-color: #000000;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #name_text{
     position: relative;
-    top: 20%;
+    top: 25%;
     margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#name-header{
+    letter-spacing: 10px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#education_section{
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.section-header{
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#subtitle{
+    font-size: 28px;
+    font-weight: 400;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .fill-screen{
@@ -26,6 +52,13 @@ body{
     margin: 0 2em 0 0;
     bottom: 0;
 }
+
+/* .side-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+}  */
+
 
 .carousel .carousel-item {
     visibility: hidden;
@@ -70,3 +103,8 @@ body{
       width: 100%;
       min-height: 100vh;
   } */
+
+.sidenav li > a:hover {
+background-color: rgba(255, 255, 255, 0.199);
+}
+
