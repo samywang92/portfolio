@@ -104,12 +104,12 @@ body{
     color: #a8a8a8;
     padding-left: 15px;
     border-left: 1px solid #ee6e73;
+    background-color: rgba(255, 255, 255, 0.199);
   }
 
-/* #name-section{
-      width: 100%;
-      min-height: 100vh;
-  } */
+.opacity{
+      opacity: .60;
+  }
 
 .sidenav li > a:hover {
 background-color: rgba(255, 255, 255, 0.199);
@@ -122,5 +122,13 @@ background-color: rgba(255, 255, 255, 0.199);
 
 .hide{
     display: none;
+}
+
+.resume-modal{
+    min-height: 85%;
+}
+
+.resume-content{
+    height: 100%;
 }
 
