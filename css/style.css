@@ -1,10 +1,4 @@
-/* html{
-    height:100%;
-    background-image: url("file:///Users/sam/Desktop/CodingBootcamp/portfolio/portfolio/images/bg.jpg");
-}  */
-
 body{
-    /* background-image: url("file:///Users/sam/Desktop/CodingBootcamp/portfolio/portfolio/images/bg.jpg"); */
     height: 100%;
     background-color: #000000;
     font-family: 'Montserrat', sans-serif;
@@ -141,6 +135,41 @@ background-color: rgba(255, 255, 255, 0.199);
 
   .portfolio-img:hover {
     opacity: 1;
+  }
+
+  .img-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 230px;
+    width: 300px;
+    opacity: 0;
+    transition: .5s ease;
+    /* background-color: #008CBA; */
+    background-image: url("../images/pokeball.jpg");
+  }
+  
+  .portfolio-img:hover .overlay {
+    opacity: .75;
+  }
+  
+  .text-overlay {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
   }
 
 
