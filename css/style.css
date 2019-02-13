@@ -163,7 +163,7 @@ background-color: rgba(255, 255, 255, 0.199);
   
   
   .img-container:hover .overlay {
-    opacity: 1;
+    opacity: .80;
   }
   
   .text-overlay {
