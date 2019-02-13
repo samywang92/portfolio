@@ -135,6 +135,7 @@ background-color: rgba(255, 255, 255, 0.199);
 
   .portfolio-img:hover {
     opacity: 1;
+  
   }
 
   .img-container {
@@ -148,16 +149,21 @@ background-color: rgba(255, 255, 255, 0.199);
     bottom: 0;
     left: 0;
     right: 0;
-    height: 230px;
-    width: 100%;
+    height: 238px;
+    width: 302px;
+    margin: auto;
+    /* width: 100%; */
     opacity: 0;
     transition: .5s ease;
     /* background-color: #008CBA; */
     background-image: url("../images/pokeball.jpg");
+    background-size: 300px 230px;
+    background-repeat: round;
   }
   
-  .portfolio-img:hover .overlay {
-    opacity: .75;
+  
+  .img-container:hover .overlay {
+    opacity: 1;
   }
   
   .text-overlay {
